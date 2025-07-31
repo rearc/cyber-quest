@@ -61,7 +61,7 @@ No.
 We would still like you to demonstrate your existing skills, feel free to accomplish the hypothesis goal in whatever you way you do have experience with or use the hints to do as much as you can.
 
 ### Q. Can I use AI to assist me?
-You can use AI as a reference, but we encourage you to be open about it! Please document what you used, what your prompts where, how it helped, what it got wrong, etc.
+You can use AI as a reference, but we encourage you to be open about it! Please document what you used, what your prompts were, how it helped, what it got wrong, etc.
 
 ### Q. Hints 🤐
 <details>
