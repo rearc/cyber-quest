@@ -24,7 +24,7 @@ This quest consists of 3 parts. Putting all 3 of these parts together will mimic
 
 ### Part 1: Load the Sample Dataset
 
-1. Using a Jupyter notebook load the JSON line file from the data/ directory into a Spark dataframe.
+1. Using a Jupyter notebook load the JSON line file from the `data/` directory into a Spark dataframe.
 2. Create a new dataframe that parses out any necessary fields from the `_raw` column to be used in part 2.
 
 ### Part 2: Detection Engineering
@@ -57,8 +57,8 @@ Submission should include a copy of the repo with a Jupyter notebook populated w
 ### Q. Can I share this quest with others?
 No.
 
-### Q. What can I do if I've never worked with notebooks, pyspark, or sql before?
-We would still like you to demonstrate your existing skills, feel free to accomplish the hypothesis goal in whatever you way you do have experience with or use the hints to do as much as you can.
+### Q. What can I do if I've never worked with notebooks, PySpark, or SQL before?
+We would still like you to demonstrate your existing skills. Feel free to accomplish the hypothesis goal in whatever way you do have experience with, or use the hints to do as much as you can.
 
 ### Q. Can I use AI to assist me?
 You can use AI as a reference, but we encourage you to be open about it! Please document what you used, what your prompts were, how it helped, what it got wrong, etc.
