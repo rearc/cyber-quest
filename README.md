@@ -29,14 +29,14 @@ This quest consists of 3 parts. Putting all 3 of these parts together will mimic
 
 ### Part 2: Detection Engineering
 
-1. Preferably using either PySpark or SQL create a query or queries that will prove the detection hypothesis.
+1. Preferably using either PySpark or SQL, create a query or queries that will prove the detection hypothesis.
 2. Output the result in the notebook
     - Select columns based on what is applicable to an analyst during triage
 
 ### Part 3: Additional Steps
 
 #### Data Normalization
- - Using any open cybersecurity data model framework create a "normalized" view of your original parsed dataframe
+ - Using any open cybersecurity data model framework, create a "normalized" view of your original parsed dataframe
 
 #### Write the result to a fictitious `alert` table
  - Package the result of the detection as an alert row in a new dataframe that would theoretically be used by an analyst during triage
@@ -67,7 +67,7 @@ You can use AI as a reference, but we encourage you to be open about it! Please 
 <details>
 <summary>Hint 1: Loading a dataframe using PySpark</summary>
 
-- Installation: We reccomend using a local virtual python environment, use the following link for [setup information](https://spark.apache.org/docs/latest/api/python/getting_started/install.html#)
+- Installation: We recommend using a local virtual python environment, use the following link for [setup information](https://spark.apache.org/docs/latest/api/python/getting_started/install.html#)
 
 -  PySpark Initialization & Reading JSON: [See Getting Started Docs](https://spark.apache.org/docs/latest/sql-getting-started.html#running-sql-queries-programmatically)
 
@@ -75,7 +75,7 @@ You can use AI as a reference, but we encourage you to be open about it! Please 
 <details>
 <summary>Hint 2: Parsing a dataframe in PySpark</summary>
 
-- For extractic JSON see [PySpark docs](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.from_json.html)
+- For extractic JSON, [See PySpark docs](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.functions.from_json.html)
 - The [Ultimate Windows Security Encyclopedia]("https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/") is a good resources for the schema.
 
 </details>
