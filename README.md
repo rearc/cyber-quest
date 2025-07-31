@@ -24,9 +24,8 @@ This quest consists of 3 parts. Putting all 3 of these parts together will mimic
 
 ### Part 1: Load the Sample Dataset
 
-1. Using a Jupyter notebook load the JSON line file in the data/ directory into a Spark dataframe.
-    - We have provided a pyproject.toml file to manage loading any dependencies (PySpark, ipykernel).
-2. Create a new dataframe that parses out and necessary fields from the `_raw` column.
+1. Using a Jupyter notebook load the JSON line file from the data/ directory into a Spark dataframe.
+2. Create a new dataframe that parses out any necessary fields from the `_raw` column to be used in part 2.
 
 ### Part 2: Detection Engineering
 
@@ -37,10 +36,10 @@ This quest consists of 3 parts. Putting all 3 of these parts together will mimic
 ### Part 3: Additional Steps
 
 #### Data Normalization
- - Using an open cybersecurity data model framework create a "normalized" view of your original parsed dataframe
+ - Using any open cybersecurity data model framework create a "normalized" view of your original parsed dataframe
 
 #### Write the result to a fictitious `alert` table
- - Package the result of the detection as an alert row in a new dataframe
+ - Package the result of the detection as an alert row in a new dataframe that would theoretically be used by an analyst during triage
     - Think about what an analyst would need, what metadata would be useful at a high level, how this would be presented on a dashboard
 
 
