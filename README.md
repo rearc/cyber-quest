@@ -4,49 +4,57 @@
 The cybersecurity quest is a fun way to assess your hands-on engineering skills. It is also a good representation of the type of work associated with this role.
 
 ## Q. What skills are needed?
+* Detection Engineering
 * Security Data Engineering
-* Detection Engineering Concepts
 * Programming Language (Python and/or SQL)
-* Development (Working with Jupyter Notebooks, Git, and virtual environments)
+* Development (Working with Jupyter Notebooks, Python, and Git)
 
 ## Q. Challenge Steps
-This quest consists of 3 parts. Putting all 3 of these parts together will mimic our detection development and engineering workflow. If you get stuck see the [FAQ section](#faq).
+This quest consists of 3 main parts. Putting all 3 of these parts together will mimic our detection development and engineering workflow. If you get stuck see the [FAQ section](#faq).
 
-- Part 1 will showcase your skills with basic data engineering using PySpark.
+- Part 1 is completed for you, this section consists of setting up the local spark environment, loading the JSON data in, and parsing it to a usable state.
 - Part 2 will showcase your analytic skills by applying the threat hypothesis below to an actionable analytic query using SQL (preferably).
 - Part 3 will showcase your knowledge of additional subjects such as data normalization frameworks, alert packaging, and threat intel enrichment.
 
 
-### Hypothesis
+### Hypothesis - IMPORTANT
 
+ - Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. 
  - A threat actor can leverage Microsoft Office applications against users on Windows endpoints through phishing to make potentially malicious web calls. 
  - Windows Endpoints forwarding DNS activity via sysmon logs to a data orchestration platform like Cribl would be utilized to identify this activity.
 
 ### Part 1: Load the Sample Dataset
 
-1. Using a Jupyter notebook load the JSON line file from the `data/` directory into a Spark dataframe.
+***THIS STEP IS COMPLETED FOR YOU.***
+<br />The template Jupyter notebook contains the code for the following actions:
+
+1. Load the JSON line file from the `data/` directory into a Spark dataframe.
 2. Create a new dataframe that parses out any necessary fields from the `_raw` column to be used in part 2.
+3. Create a view for use with Spark SQL queries
 
 ### Part 2: Detection Engineering
 
 1. Preferably using either PySpark or SQL, create a query or queries that will prove the detection hypothesis.
-2. Output the result in the notebook
+2. Output the result of this query in the notebook with a new dataframe
     - Select columns based on what is applicable to an analyst during triage
 
 ### Part 3: Additional Steps
 
 #### Data Normalization
- - Using any open cybersecurity data model framework, create a "normalized" view of your original parsed dataframe
+ - Using any relevant cybersecurity data model framework, create a "normalized" view of your original parsed/result dataframe
 
 #### Write the result to a fictitious `alert` table
  - Package the result of the detection as an alert row in a new dataframe that would theoretically be used by an analyst during triage
-    - Think about what an analyst would need, what metadata would be useful at a high level, how this would be presented on a dashboard
+    - Think about what an analyst would need, what metadata would be useful at a high level, how this might be presented on a dashboard
 
 
 #### Threat Intel Enrichment on Domain in Query
   - Given that the source data includes domain names, enrich the detection or alert with information from any threat intelligence source
 
 ## FAQ
+
+### Q. What do I need to do to setup this environment
+A general understanding of Python and Virtual Environments is expected. For the purposes of this challenge the only dependency outside of what is listed in the `requirements.txt` file is Java 17 or Later
 
 ### Q. Do I have to complete every step?
 Complete the steps that you feel comfortable with.
@@ -57,11 +65,11 @@ Submission should include a copy of the repo with a Jupyter notebook populated w
 ### Q. Can I share this quest with others?
 No.
 
-### Q. What can I do if I've never worked with notebooks, PySpark, or SQL before?
+### Q. What can I do if I've never worked with Jupyter Notebooks, PySpark, or SQL before?
 We would still like you to demonstrate your existing skills. Feel free to accomplish the hypothesis goal in whatever way you do have experience with, or use the hints to do as much as you can.
 
 ### Q. Can I use AI to assist me?
-You may use AI as a reference tool but there will be a strong expectation to exhibit the same expertise and understanding from your submission in your interview. In addition we encourage you to be open about any usage! Please document what you used, what your prompts were, how it helped, what it got wrong, etc.
+You ***may*** use AI as a reference tool but there will be a strong expectation to exhibit the same expertise and understanding from your submission in your interview. In addition we encourage you to be open about any usage! Please document what you used, what your prompts were, how it helped, what it got wrong, etc.
 
 ### Q. Hints 🤐
 <details>
