@@ -1,0 +1,18 @@
+{
+  "name": "Local PySpark",
+  "image": "spark:python3-java17",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-toolsai.datawrangler",
+        "ms-python.python"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "postCreateCommand": "pip3 install -r requirements.txt"
+}
