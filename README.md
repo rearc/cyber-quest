@@ -64,7 +64,7 @@ This quest consists of 3 main parts. Putting all 3 of these parts together will 
 ## FAQ
 
 ### Q. What do I need to do to setup this environment
-A general understanding of Python and Virtual Environments is expected. For the purposes of this challenge the only dependency outside of what is listed in the `requirements.txt` file is Java 17 or Later
+A general understanding of Python and Virtual Environments is expected. For the purposes of this challenge the only dependency outside of what is listed in the `requirements.txt` file is Java 17 or Later. We have also included a devcontainer example configuration (note - this has only been validated on amd64).
 
 ### Q. Do I have to complete every step?
 Complete the steps that you feel comfortable with.
